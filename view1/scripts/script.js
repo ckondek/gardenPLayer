@@ -114,7 +114,9 @@ window.onload = function(){
          }
 
          text3.innerHTML="Image planted in garden: "+workList[currentIndex]["created_at"];
-         text4.innerHTML="This Image is generation: "+workList[currentIndex]["generation"];
+         var gen=parseInt(workList[currentIndex]["generation"])+1
+
+         text4.innerHTML="This Image is generation: "+gen;
   }
 
 };
