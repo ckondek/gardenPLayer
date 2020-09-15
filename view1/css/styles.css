@@ -1,0 +1,40 @@
+body{
+  background-color: black;
+}
+
+.captions{
+  font-family: monospace;
+  font-style: normal;
+  font-size: 12px;
+  font-stretch: semi-expanded;
+  color:white;
+}
+
+#main{
+  position:relative;
+}
+#captionBox{
+  position:absolute;
+  top:10px;
+  left:10px;
+}
+
+.absolute{
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+
+
+button{
+  background-color: green;
+  z-index: 5;
+}
+
+button:active{
+  background-color: red;
+}
+#test{
+  position:absolute;
+  z-index: 4;
+}
