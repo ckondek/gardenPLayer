@@ -137,7 +137,7 @@ window.onload = function(){
         console.log("endof main loop---Image")
         console.log("--------------------")
         mainLoop()
-      },7000);
+      },10000);
     }
   };
 
