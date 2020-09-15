@@ -7,7 +7,8 @@ window.onload = function(){
   context.fillStyle = "black";
   screenRatio=canvas.width/canvas.height
   var video  = document.getElementById('videoTag');
-  var counter=8;
+  var activator =document.getElementById('activate')
+  var counter=10;
   var imgObj=new Image();;
   var workList;
   var lastUpdated;
@@ -18,6 +19,17 @@ window.onload = function(){
               'http://d1ua7ibh28zfpl.cloudfront.net/gardenFilms/grow2.mp4',
               'http://d1ua7ibh28zfpl.cloudfront.net/gardenFilms/grow3.mp4'
             ];
+
+  video.src=videoArray[2];
+   activator.addEventListener("click",function(){
+     console.log("activated")
+     video.style.display="block";
+     activator.style.display = "none";
+     video.play();
+     video.addEventListener('ended', function () {
+         video.style.display="none";
+         });
+      });
 
 
   function triggerRandomVideo(){
